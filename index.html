@@ -10,7 +10,7 @@
     <nav class="text-xl font-normal bg-transparent">
       <div class="max-w-7xl flex flex-row py-2 justify-between mx-auto">
         <img src="./img/Logo-rec.png" alt="Logo" class="h-20">
-        <div class="nav-links content-center">
+        <div class="nav-links hidden lg:block content-center">
           <ul class="flex gap-8">
             <li class="text-orange-500"><a href="/index.html">Home</a></li>
             <li><a href="/Menu.html">Menu</a></li>
@@ -26,7 +26,22 @@
       </div>
     </nav>
     <main class="max-w-full">
-      <div class="py-[10%] sm:py-[32px] px-12 max-w-7xl mx-auto bg-img text-white text-center">
+      <div class="py-[10%] sm:py-[32px] px-12 max-w-7xl flex mx-auto bg-img text-white text-center">
+        <div class="w-[110%] block z-10 content-center">
+          <h1 class="text-[3rem] xl:text-[3.5rem] text-slate-900 text-start font-medium">Explore Our <span class="text-orange-500">Menu</span> For <span class="text-orange-500">Culinary</span> Delights</h1>
+          <p class="text-lg text-justify text-black my-4">At our restaurent, flavours dance in our plate, creating a symphony of taste. Our diverse menu, created with passion with delightful experiences.</p>
+          <div class="float-start my-4">
+            <button class="py-2 px-6 bg-orange-500 rounded-md text-white">View Menu</button>
+            <button class="border-2 py-2 px-6 ml-4 border-orange-500 rounded-md text-orange-500">Book Table</button>
+          </div>
+        </div>
+        <div class="flex flex-col -ml-20 md:-ml-12 place-content-end md:place-content-between w-1/2 ">
+          <img src="./img/Hero Bowl Up.png" class="px-8" alt="">
+          <img src="./img/Hero Bowl Down.png" class="px-8" alt="">
+        </div>
+        <div class="md:content-center w-2/3 md:w-full -ml-24 md:block">
+          <img src="/img/Hero Bowl Big.png" alt="">
+        </div>
       </div>
     </main>
   </body>
