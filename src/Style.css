@@ -2,3 +2,30 @@
 @tailwind components; 
 @tailwind utilities;
 
+@layer base {
+    .test {
+      @apply border border-solid border-teal-500;
+    }
+    
+    .bg-img{
+        height: 85dvh;
+    }
+    .bg-img::before {
+        content: "";
+        position: absolute;
+        background: url("../img/HeroBgCroppped.jpg") no-repeat;
+        background-size: cover;
+        filter:  opacity(0.2); 
+        mask-image: linear-gradient(transparent, white, transparent, white, white);
+        height: 100dvh;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+}
+@layer components {
+}
+
+@layer utilities {
+}
