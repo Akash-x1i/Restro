@@ -8,6 +8,7 @@ module.exports = {
       '3xs': '370px',
       '2xs': '410px',
       'xs': '524px',
+      'mid': '930px',
       ...defaultTheme.screens,
     },
     extend: {
