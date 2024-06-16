@@ -28,13 +28,12 @@
         </div>
         <div class="mid:hidden">
           <div id="hamburger" class="fa fa-bars px-8 h-full flex content-center text-2xl text-orange-500"></div>
-          <div id="mobileNav" class="fixed flex flex-col z-30 gap-8 pt-24 px-4 text-xl text-white font-semibold uppercase bg-orange-400 h-full inset-0 top-24 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
-            <span><a href="./index.html">Home</a></span>
-            <span><a href="./Menu.html">Menu</a></span>
-            <span><a href="./reservationpage.html">Reservation</a></span>
-            <span><a href="./gallerypage.html">Gallery</a></span>
-            <span><a href="./index.html#about">About</a></span>
-            <span><a href="./index.html#contact">Contact</a></span>
+          <div id="mobileNav" class="fixed flex flex-col z-30 gap-8 pt-24 px-4 text-xl text-white font-semibold uppercase bg-orange-400 h-[85dvh] inset-0 top-24 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
+            <span><li class="text-orange-500"><a href="/index.html">Home</a></li></span>
+            <span><li><a href="/Menu.html">Menu</a></li></span>
+            <span><li><a href="/Order.html">Order</a></li></span>
+            <span><li><a href="/Delivery.html">Delivery</a></li></span>
+            <span><li><a href="/Contact.html">Contact</a></li></span>
           </div>
         </div>
       </div>
@@ -46,8 +45,8 @@
           <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[3.5rem] text-slate-900 font-medium inline xs:block">For <span class="text-orange-500">Culinary </span>Delights</h1>
           <p class="text-lg text-justify text-black my-8">At our restaurent, flavours dance in our plate, creating a symphony of taste. Our diverse menu, created with passion with delightful experiences.</p>
           <div class="float-start">
-            <button class="inline py-2 px-6 bg-orange-500 rounded-md text-white">View Menu</button>
-            <button class="inline border-2 my-6 2xs:my-2 py-2 px-6 xs:ml-4 border-orange-500 rounded-md text-orange-500">Book Table</button>
+            <button class="inline py-2 px-6 mr-4 bg-orange-500 rounded-md text-white">View Menu</button>
+            <button class="inline border-2 my-6 py-2 px-6 border-orange-500 rounded-md text-orange-500">Book Table</button>
           </div>
         </div>
         <div class="hidden 3xs:flex flex-row xs:flex-col -ml-12 xs:-ml-20 md:-ml-12 xs:place-content-between w-1/2 ">
@@ -68,8 +67,8 @@
         hamburger.classList.toggle("fa-bars");
         hamburger.classList.toggle("fa-close");
         imz.map(function(element){
-          imz.classList.toggle("z-40");
-        }
+          element.classList.toggle("z-40");
+        })
       })
     </script>
   </body>

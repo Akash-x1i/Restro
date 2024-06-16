@@ -23,6 +23,10 @@
         width: 100%;
         z-index: -1;
     }
+    #mobileNav {
+        border-top-right-radius: 2.5em 4em;
+        border-bottom-right-radius: 2.5em 4em;
+    }
 }
 @layer components {
 }
