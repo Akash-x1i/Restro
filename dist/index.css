@@ -606,10 +606,6 @@ video {
   z-index: 40;
 }
 
-.float-start {
-  float: inline-start;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -683,6 +679,10 @@ video {
 
 .w-2\/3 {
   width: 66.666667%;
+}
+
+.w-\[110\%\] {
+  width: 110%;
 }
 
 .w-\[120\%\] {
@@ -815,22 +815,18 @@ video {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-\[2\.5rem\] {
-  font-size: 2.5rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[1rem\] {
+  font-size: 1rem;
 }
 
 .text-xl {
@@ -864,6 +860,11 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
+.text-orange-900 {
+  --tw-text-opacity: 1;
+  color: rgb(124 45 18 / var(--tw-text-opacity));
+}
+
 .text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -883,12 +884,26 @@ video {
 }
 
 @media (min-width: 370px) {
+  .\33xs\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .\33xs\:flex {
     display: flex;
+  }
+
+  .\33xs\:flex-row {
+    flex-direction: row;
   }
 }
 
 @media (min-width: 524px) {
+  .xs\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .xs\:-ml-20 {
     margin-left: -5rem;
   }
@@ -913,6 +928,10 @@ video {
     width: 110%;
   }
 
+  .xs\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .xs\:flex-col {
     flex-direction: column;
   }
@@ -927,6 +946,15 @@ video {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:leading-snug {
+    line-height: 1.375;
+  }
 }
 
 @media (min-width: 768px) {
@@ -938,6 +966,10 @@ video {
     display: block;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
   .md\:w-full {
     width: 100%;
   }
@@ -946,8 +978,9 @@ video {
     align-content: center;
   }
 
-  .md\:text-\[3rem\] {
-    font-size: 3rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -968,11 +1001,5 @@ video {
 @media (min-width: 1024px) {
   .lg\:gap-8 {
     gap: 2rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
   }
 }
