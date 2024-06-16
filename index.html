@@ -62,12 +62,14 @@
     <script>
       var mobileNav = document.getElementById("mobileNav");
       var hamburger = document.getElementById("hamburger");
-      var imz = document.querySelectorAll("imz");
+      const imz = Array.from(document.querySelectorAll('.imz'));
       hamburger.addEventListener("click", function () {
         mobileNav.classList.toggle("left-[-70%]");
         hamburger.classList.toggle("fa-bars");
         hamburger.classList.toggle("fa-close");
-        imz.classList.toggle("z-40");
+        imz.map(function(element){
+          imz.classList.toggle("z-40");
+        }
       })
     </script>
   </body>
