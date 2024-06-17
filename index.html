@@ -28,7 +28,7 @@
         </div>
         <div class="mid:hidden">
           <div id="hamburger" class="fa fa-bars h-full flex content-center text-2xl text-orange-500"></div>
-          <div id="mobileNav" class="fixed flex flex-col z-30 gap-8 pt-24 px-4 text-xl text-white font-semibold uppercase bg-orange-400 h-[85dvh] inset-0 top-24 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
+          <div id="mobileNav" class="fixed flex flex-col z-30 gap-8 pt-24 px-8 text-xl text-white font-semibold uppercase bg-orange-400 h-[85dvh] inset-0 top-24 w-[75%] left-[-75%] ease-in-out duration-500 cursor-pointer">
             <span><li class="text-orange-900"><a href="/index.html">Home</a></li></span>
             <span><li><a href="/Menu.html">Menu</a></li></span>
             <span><li><a href="/Order.html">Order</a></li></span>
@@ -63,7 +63,7 @@
       var hamburger = document.getElementById("hamburger");
       const imz = Array.from(document.querySelectorAll('.imz'));
       hamburger.addEventListener("click", function () {
-        mobileNav.classList.toggle("left-[-70%]");
+        mobileNav.classList.toggle("left-[-75%]");
         hamburger.classList.toggle("fa-bars");
         hamburger.classList.toggle("fa-close");
         imz.map(function(element){
