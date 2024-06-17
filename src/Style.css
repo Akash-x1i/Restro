@@ -8,7 +8,7 @@
     }
     
     .bg-img{
-        height: 85dvh;
+        height: 80dvh;
     }
     .bg-img::before {
         content: "";
@@ -26,6 +26,9 @@
     #mobileNav {
         border-top-right-radius: 2.5em 4em;
         border-bottom-right-radius: 2.5em 4em;
+    }
+    .nav-links ul li+li{
+        @apply ml-4;
     }
 }
 @layer components {
