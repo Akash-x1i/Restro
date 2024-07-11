@@ -446,13 +446,6 @@ video {
   display: none;
 }
 
-.test {
-  border-width: 1px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 184 166 / var(--tw-border-opacity));
-}
-
 .bg-img{
   height: 80dvh;
 }
@@ -597,20 +590,12 @@ video {
   inset: 0px;
 }
 
-.left-\[-70\%\] {
-  left: -70%;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
 .left-\[-75\%\] {
   left: -75%;
 }
 
-.left-\[-7\%\] {
-  left: -7%;
+.top-32 {
+  top: 8rem;
 }
 
 .z-10 {
@@ -642,10 +627,6 @@ video {
 
 .-ml-24 {
   margin-left: -6rem;
-}
-
-.mr-0 {
-  margin-right: 0px;
 }
 
 .mr-4 {
@@ -684,8 +665,8 @@ video {
   height: 10%;
 }
 
-.h-\[85dvh\] {
-  height: 85dvh;
+.h-\[83dvh\] {
+  height: 83dvh;
 }
 
 .h-full {
@@ -704,16 +685,12 @@ video {
   width: 120%;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
 }
 
 .max-w-7xl {
@@ -792,14 +769,14 @@ video {
   padding-right: 3rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2 {
@@ -815,11 +792,6 @@ video {
 .py-\[10\%\] {
   padding-top: 10%;
   padding-bottom: 10%;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pt-0 {
@@ -977,6 +949,11 @@ video {
     padding-right: 3rem;
   }
 
+  .xs\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .xs\:pl-12 {
     padding-left: 3rem;
   }
@@ -1041,42 +1018,12 @@ video {
   .mid\:hidden {
     display: none;
   }
-
-  .mid\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .lg\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .lg\:text-2xl {
